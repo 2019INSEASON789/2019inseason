@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    font-family: "Didot", "Noto Sans TC", "PingFang TC", "微軟正黑體", Arial, sans-serif !important;
+    font-size: 16px;
+    font-weight: 300;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+em, address{
+    font-style: normal;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #ffffff !important;
+}
+footer{
+    // position: absolute;
+    position: fixed;
+    bottom: 3%;
+    z-index: 999;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 12px;
+    width: 170px;
+    .white{
+        color: #ffffff;
+    }
+}
+

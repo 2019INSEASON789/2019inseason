@@ -1,0 +1,293 @@
+._dish {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+
+    &--1 {
+        background-image: url(../img/recipe-detail/bg1-1@2x.png);
+    }
+
+    &--2 {
+        background-image: url(../img/recipe-detail/bg2-1@2x.png);
+    }
+
+    &--3 {
+        background-image: url(../img/recipe-detail/bg3-1@2x.png);
+    }
+
+    &--4 {
+        background-image: url(../img/recipe-detail/bg4-1@2x.png);
+    }
+
+    &--5 {
+        background-image: url(../img/recipe-detail/bg5-1@2x.png);
+    }
+
+    &--6 {
+        background-image: url(../img/recipe-detail/bg6-1@2x.png);
+    }
+
+    &--7 {
+        background-image: url(../img/recipe-detail/bg7-1@2x.png);
+    }
+
+    &--8 {
+        background-image: url(../img/recipe-detail/bg8-1@2x.png);
+    }
+
+    &--9 {
+        background-image: url(../img/recipe-detail/bg9-1@2x.png);
+    }
+
+    &--10 {
+        background-image: url(../img/recipe-detail/bg10-1@2x.png);
+    }
+
+    &--11 {
+        background-image: url(../img/recipe-detail/bg11-1@2x.png);
+    }
+
+    &--12 {
+        background-image: url(../img/recipe-detail/bg12-1@2x.png);
+    }
+}
+
+._dish_ingredient__title {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translate(-12%, -50%);
+    // bottom: 0;
+    // margin: auto;
+    // width: 30%;
+    // height: 30%;
+
+    h1 {
+        font-size: 5em;
+        font-weight: bold;
+        line-height: 100px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: 'Kozuka Mincho Pr6N';
+        letter-spacing: 9px;
+        font-weight: bold;
+    }
+
+    &--ingredient {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+
+        .js_ingredient & {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &--recipe {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+
+        .js_recipe & {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+._dish__back {
+    position: absolute;
+    left: 12%;
+    bottom: 12%;
+    margin: auto;
+    width: 30%;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 165px;
+
+    &:hover {
+        color: #ffffff; 
+        opacity: 0.6;
+        img{
+            transform: translateX(-10px);
+            padding-right: 0;
+            opacity: 0.6;
+        }
+        ._dish__back__arrow{
+            width: 40px;
+            transform: translateX(-15px);
+            opacity: 0.6;
+            &::before{
+                right: 24px;
+            }
+        }
+    }
+
+    img {
+        width: 30px;
+        padding-right: 10px;
+        transition: .5s ease-in-out;
+    }
+
+    span {
+        vertical-align: middle;
+        font-size: 18px;
+        letter-spacing: 1px;
+        // margin-left: 5px;
+    }
+}
+._dish__back__arrow {
+    position: relative;
+    background: #fff;
+    border: 1px solid #fff;
+    width: 25px;
+    padding-right: 10px;
+    transition: .5s;
+    &::before{
+        content: "＜";
+        font-weight: 700;
+        color: #fff;
+        position: absolute;
+        right: 9px;
+        top: -20.5px;
+        transition: .5s;
+        font-family: "Microsoft Jhenghei";
+        font-size: 25px;
+    }
+  }
+
+._dish__tab {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12%;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
+._dish__tabBtn {
+    display: inline-block;
+    padding: 0 0 7px 0;
+    position: relative;
+    font-family: 'Kozuka Mincho Pr6N';
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -5px;
+        background: #ffffff;
+        width: 0;
+        height: 1px;
+        transition: width 0.2s ease-in-out;
+    }
+
+    &--ingredient {
+        .js_ingredient & {
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 0;
+                bottom: -5px;
+                background: #ffffff;
+                width: 100%;
+                height: 1px;
+                transition: width 0.2s ease-in-out;
+            }
+        }
+    }
+
+    &--recipe {
+        .js_recipe & {
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 0;
+                bottom: -5px;
+                background: #ffffff;
+                width: 100%;
+                height: 1px;
+                transition: width 0.2s ease-in-out;
+            }
+        }
+    }
+
+    span {
+        letter-spacing: 1px;
+    }
+
+}
+
+._dish_ingredient__content {
+    // position: absolute;
+    // right: 6%;
+    // top: 50%;
+    // transform: translate(-6%, -50%);
+    // font-weight: 300;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    font-weight: 300;
+    width: 17%;
+    right: 12%;
+    font-family: 'Kozuka Mincho Pr6N R';
+
+    h3 {
+        font-size: 19px;
+        display: block;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-size: 14px;
+        display: block;
+        letter-spacing: 2px;
+        text-align: justify;
+        // font-weight: 100;
+        margin-bottom: 9%;
+        line-height: 26px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &--ingredient {
+        // padding-right: 5%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+        font-family: 'Kozuka Mincho Pr6N';
+
+        .js_ingredient & {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &--recipe {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+        font-family: 'Kozuka Mincho Pr6N';
+
+        .js_recipe & {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
