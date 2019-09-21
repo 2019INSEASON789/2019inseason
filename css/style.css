@@ -9575,13 +9575,14 @@ footer {
 
   @media (max-width: 1600px) {
     ._gallery.char {
-        height: 320vh;
+      height: 320vh;
     }
     ._gallery.crop {
       height: 540vh;
     }
     ._island_crop{
       width:60vw;
+      left: -60vw;
     }
   
     ._island_crop__window{
