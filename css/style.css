@@ -9573,11 +9573,30 @@ footer {
   letter-spacing: 1px;
   margin-top: 3px; }
 
-@media (max-width: 1600px) {
-  ._gallery.char {
-      height: 320vh;
+  @media (max-width: 1600px) {
+    ._gallery.char {
+        height: 320vh;
+    }
+    ._gallery.crop {
+      height: 540vh;
+    }
+    ._island_crop{
+      width:60vw;
+    }
+  
+    ._island_crop__window{
+      width:90%;
+    }
+  
+    ._island_crop__text {
+      margin-bottom: 10px !important;
+    }
+  
+    ._island_crop__info p {
+      font-size:10px;
+      line-height: 14px;
+    }
+    ._about_section--4{
+      height: 150vh;
+    }
   }
-  ._gallery.crop {
-    height: 540vh;
-}
-}
