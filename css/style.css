@@ -9599,4 +9599,7 @@ footer {
     ._about_section--4{
       height: 150vh;
     }
+    ._island_crop__info div{
+      margin-bottom: 0;
+    }
   }
